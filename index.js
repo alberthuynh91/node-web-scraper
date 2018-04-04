@@ -15,7 +15,7 @@ const options = {
     $('.track-connection').find('li').each((i, elem) => {
         tracks[i] = $(elem).text().replace(/[\n\t\r]/g,"");
     })
-    console.log(`Scarped Sampled Tracks from Kendrick Lamar: `, tracks)
+    console.log(`Scraped Sampled Tracks from Kendrick Lamar: \n`, tracks)
   })
   .catch((err) => {
     console.log(err);
