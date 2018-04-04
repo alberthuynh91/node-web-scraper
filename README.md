@@ -9,3 +9,9 @@ A basic example scraping whosampled.com for song data.
 - Change Directory into newly cloned repo: `cd node-web-scraper`
 - Install dependencies: `npm install`
 - Run node on index.js: `node index.js`
+
+
+## Helpful Resources
+An Introduction To Web Scraping(https://codeburst.io/an-introduction-to-web-scraping-with-node-js-1045b55c63f7)
+Request(https://github.com/request/request-promise)
+Cheerio(https://github.com/cheeriojs/cheerio)
