@@ -12,12 +12,10 @@ const options = {
 
   rp(options)
   .then(($) => {
-
     $('.track-connection').find('li').each((i, elem) => {
-        console.log(`what is this? : `, $(elem).text())
         tracks[i] = $(elem).text().replace(/[\n\t\r]/g,"");
     })
-    console.log(`tracks: `, tracks)
+    console.log(`Scarped Sampled Tracks from Kendrick Lamar: `, tracks)
   })
   .catch((err) => {
     console.log(err);
