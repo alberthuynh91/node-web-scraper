@@ -12,6 +12,6 @@ A basic example scraping whosampled.com for song data. The example scrapes data 
 
 
 ## Helpful Resources
-- An Introduction To Web Scraping(https://codeburst.io/an-introduction-to-web-scraping-with-node-js-1045b55c63f7)
-- Request(https://github.com/request/request-promise)
-- Cheerio(https://github.com/cheeriojs/cheerio)
+- [An Introduction To Web Scraping](https://codeburst.io/an-introduction-to-web-scraping-with-node-js-1045b55c63f7)
+- [Request](https://github.com/request/request-promise)
+- [Cheerio](https://github.com/cheeriojs/cheerio)
