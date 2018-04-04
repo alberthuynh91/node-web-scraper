@@ -1,6 +1,6 @@
 # Node Web Scraper Example using Request / Cheerio
 
-A basic example scraping whosampled.com for song data.
+A basic example scraping whosampled.com for song data. The example scrapes data from this page: https://www.whosampled.com/Kendrick-Lamar/
 
 ## Setup
 
