@@ -1,22 +1,17 @@
-const rp = require('request-promise');
+const axios = require("axios");
 const cheerio = require('cheerio');
 
 const tracks = [];
 
-const options = {
-    uri: 'https://www.whosampled.com/Kendrick-Lamar/',
-    transform: function (body) {
-      return cheerio.load(body);
-    }
-  };
+const url = 'https://www.whosampled.com/Kendrick-Lamar/'
 
-  rp(options)
-  .then(($) => {
+axios(url)
+  .then((response) => {
+    const html = response.data
+    const $ = cheerio.load(html)
     $('.track-connection').find('li').each((i, elem) => {
-        tracks[i] = $(elem).text().replace(/[\n\t\r]/g,"");
+      tracks[i] = $(elem).text().replace(/[\n\t\r]/g,"");
     })
     console.log(`Scraped Sampled Tracks from Kendrick Lamar: \n`, tracks)
   })
-  .catch((err) => {
-    console.log(err);
-  });
+  .catch(console.error);
