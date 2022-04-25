@@ -27,6 +27,8 @@ axios(url)
       itemList.push(item)
     })
 
+    console.log(`\n\n item list: `, itemList)
+    
     generateDataFile(itemList)
   })
   .catch(console.error);
